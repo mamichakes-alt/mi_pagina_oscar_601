@@ -66,3 +66,18 @@ button {
     cursor: pointer;
     transition: transform 0.15,background-color 0.35;
 }
+
+button:active {
+    transform: stale (0.05);
+    background-color: blue;
+}
+
+#mensaje {
+    display: none;
+    opacity: 0;
+    transform: translate(-10px);
+    transition: all 0.5s ease;
+    font-weight: bold;
+    color: aquamarine;
+    margin-top: 10px;
+}
