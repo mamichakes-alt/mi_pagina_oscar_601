@@ -1,6 +1,7 @@
-h1{
-    color:blue;
+h1 {
+    color: blue;
 }
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(5, 248, 66);
@@ -13,7 +14,6 @@ header {
     color: beige;
     text-align: center;
 }
-
 
 nav {
     background-color: #34495e;
@@ -33,6 +33,7 @@ nav a {
 nav a:hover {
     color: #ffcc00;
 }
+
 section {
     background-color: coral;
     margin: 20px auto;
@@ -47,7 +48,6 @@ img {
     margin-top: 20px;
 }
 
-
 footer {
     background-color: aqua;
     color: white;
@@ -61,21 +61,21 @@ button {
     font-size: 16px;
     background-color: brown;
     color: blue;
-    border: brown;
+    border: none; /* Corregido: antes estaba "border: brown;" */
     border-radius: 8px;
     cursor: pointer;
-    transition: transform 0.15,background-color 0.35;
+    transition: transform 0.15s, background-color 0.35s; /* Corregido: faltaban las unidades */
 }
 
 button:active {
-    transform: stale (0.05);
+    transform: scale(0.95); /* Corregido: antes estaba "stale (0.05)" */
     background-color: blue;
 }
 
 #mensaje {
     display: none;
     opacity: 0;
-    transform: translate(-10px);
+    transform: translateX(-10px); /* Corregido: antes estaba "translate(-10px)" */
     transition: all 0.5s ease;
     font-weight: bold;
     color: aquamarine;
