@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi primera pagina web</title>
+    <title>Mi primera página web</title>
+    <!-- Corregido: link a la hoja de estilos -->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
@@ -12,13 +14,10 @@
 
     <nav>
       <a href="#sobre-mi">Sobre mí</a>
-      <link rel="styleshcet" heret="style.css"/>
       <a href="#pec">Proyecto PEC</a>
     </nav>
-
-    <button id="theme-toggle">🌙 Modo Oscuro</button>
+    
     <section id="sobre-mi">
-      
       <h2>Sobre mí</h2>
       <img
         src="img/perros.jpg"
@@ -28,18 +27,18 @@
       />
 
       <p>Hola, mi nombre es Oscar.</p>
-
       <p>Soy estudiante en el CECYCTEO EMSAD-35.</p>
+      <p>Me gusta el arte y aprender más sobre ella.</p>
 
-      <p>Me gusta el arte y aprender mas sobre ella.</p>
-
-       <img src="img/perros.jpg" alt="perro del proyecto huellas">
+      <img src="img/perros.jpg" alt="Perro del proyecto Huellas" />
     </section>
 
     <section id="pec">
       <h2>Proyecto Escolar Comunitario</h2>
-      <p id="mensaje" stile="displeay:nome;"> </p>
-      <button onclick="mostrarmensaje(hola)">mostrar mensaje</button>
+      <!-- Corregido: style y display -->
+      <p id="mensaje" style="display:none;"></p>
+      <!-- Corregido: función JavaScript -->
+      <button onclick="mostrarMensaje()">Mostrar mensaje</button>
 
       <h3>Huellas: cuidado animal y salud comunitaria</h3>
 
@@ -62,7 +61,16 @@
     <footer>
       <p>2026 - Mi nombre Oscar</p>
     </footer>
+
+    <!-- Botón dentro del body -->
+    <button type="button">Haz clic aquí</button>
+
+    <!-- Script corregido -->
+    <script>
+      function mostrarMensaje() {
+        document.getElementById("mensaje").style.display = "block";
+        document.getElementById("mensaje").textContent = "¡Hola!";
+      }
+    </script>
   </body>
 </html>
-
-<button type="button">Haz clic aquí</button>
