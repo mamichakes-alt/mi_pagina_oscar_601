@@ -38,7 +38,7 @@
       <!-- Corregido: style y display -->
       <p id="mensaje" style="display:none;"></p>
       <!-- Corregido: función JavaScript -->
-      <button onclick="mostrarMensaje()">Mostrar mensaje</button>
+      <button onclick="mostrarMensaje(hola)">Mostrar mensaje</button>
 
       <h3>Huellas: cuidado animal y salud comunitaria</h3>
 
@@ -68,7 +68,7 @@
     <!-- Script corregido -->
     <script>
       function mostrarMensaje() {
-        document.getElementById("hola mi nombre es oscar eliel bernardo padilla").style.display = "block";
+        document.getElementById("mensaje").style.display = "block";
         document.getElementById("mensaje").textContent = "¡Hola!";
       }
     </script>
