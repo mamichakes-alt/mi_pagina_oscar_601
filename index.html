@@ -19,6 +19,9 @@
     
     <section id="sobre-mi">
       <h2>Sobre mí</h2>
+      <p id="mensaje2" style="display:none;"></p>
+      <!-- Corregido: función JavaScript -->
+      <button onclick="mostrarmensaje2()">Mostrar mensaje</button>
       <img
         src="img/perros.jpg"
         alt="Foto personal"
@@ -38,7 +41,7 @@
       <!-- Corregido: style y display -->
       <p id="mensaje" style="display:none;"></p>
       <!-- Corregido: función JavaScript -->
-      <button onclick="mostrarMensaje(hola)">Mostrar mensaje</button>
+      <button onclick="mostrarmensaje()">Mostrar mensaje</button>
 
       <h3>Huellas: cuidado animal y salud comunitaria</h3>
 
@@ -61,16 +64,6 @@
     <footer>
       <p>2026 - Mi nombre Oscar</p>
     </footer>
-
-    <!-- Botón dentro del body -->
-    <button type="button">Haz clic aquí</button>
-
-    <!-- Script corregido -->
-    <script>
-      function mostrarMensaje() {
-        document.getElementById("mensaje").style.display = "block";
-        document.getElementById("mensaje").textContent = "¡Hola!";
-      }
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
