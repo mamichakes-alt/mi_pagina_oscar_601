@@ -1,16 +1,16 @@
 h1 {
-    color: blue;
+    color: rgb(1, 1, 19);
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(5, 248, 66);
+    background-color: rgb(5, 159, 248);
     margin: 0;
     line-height: 1.6;
 }
 
 header {
-    background-color: rgb(103, 8, 226);
+    background-color: rgb(226, 52, 8);
     color: beige;
     text-align: center;
 }
@@ -31,11 +31,11 @@ nav a {
 
 /* Efecto al pasar el mouse */
 nav a:hover {
-    color: #ffcc00;
+    color: #00ff55;
 }
 
 section {
-    background-color: coral;
+    background-color: rgb(235, 193, 131);
     margin: 20px auto;
     padding: 20px;
     width: 80%;
@@ -49,7 +49,7 @@ img {
 }
 
 footer {
-    background-color: aqua;
+    background-color: rgb(22, 22, 22);
     color: white;
     text-align: center;
     padding: 10px;
