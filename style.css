@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background-color: rgb(219, 217, 216);
+    background-color: rgb(250, 2, 2);
     color: beige;
     text-align: center;
 }
@@ -60,7 +60,7 @@ button {
     padding: 10px 20px;
     font-size: 16px;
     background-color: rgb(22, 1, 1);
-    color: blue;
+    color: rgb(247, 247, 250);
     border: none; /* Corregido: antes estaba "border: brown;" */
     border-radius: 8px;
     cursor: pointer;
@@ -69,7 +69,7 @@ button {
 
 button:active {
     transform: scale(0.95); /* Corregido: antes estaba "stale (0.05)" */
-    background-color: blue;
+    background-color: rgb(252, 252, 253);
 }
 
 #mensaje {
