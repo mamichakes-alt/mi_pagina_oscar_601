@@ -1,22 +1,5 @@
-function mostrarmensaje (){
-    let mensaje = document.getElementById("mensaje");
+const button = document.getElementById("toggle-theme");
 
-    mensaje.innerHTML = "cuida y proteje alos animales";
-    mensaje.style.display = "block";
-
-    setTimeout (() => {
-        mensaje.style.opacity = "1";
-        mensaje.style.transform = "traslateY(0";
-    }, 50);
-}
-function mostrarmensaje2 (){
-    let mensaje = document.getElementById("mensaje2");
-
-    mensaje.innerHTML = "hola soy oscar";
-    mensaje.style.display = "block";
-
-    setTimeout (() => {
-        mensaje.style.opacity = "1";
-        mensaje.style.transform = "traslateY(0";
-    }, 50);
-}
+button.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+});
